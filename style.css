@@ -1,0 +1,41 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.row {
+    margin: 10px;
+}
+
+.entry {
+    background: gray;
+    margin: 10px;
+    border: black 2px solid;
+}
+
+.content {
+    text-align: left;
+    clear: both;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.label {
+    float: right;
+    background: red;
+    font-size: 1.25em;
+    border: 2px black solid;
+    margin: -2px -2px 0px 0px;
+    padding: 5px;
+}
+
+#header {
+    background: gray;
+    border-radius: 0;
+    border: 0;
+}
