@@ -13,7 +13,7 @@ body {
 }
 
 .entry {
-    background: gray;
+    background: grey;
     margin: 10px;
     border: black 2px solid;
 }
@@ -27,7 +27,7 @@ body {
 
 .label {
     float: right;
-    background: red;
+    background: #2679d0;
     font-size: 1.25em;
     border: 2px black solid;
     margin: -2px -2px 0px 0px;
@@ -35,7 +35,8 @@ body {
 }
 
 #header {
-    background: gray;
+    background: #2679d0;
+    color: ivory;
     border-radius: 0;
     border: 0;
 }
