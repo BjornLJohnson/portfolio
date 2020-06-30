@@ -1,5 +1,5 @@
 var value = 2000;
-authToken = None;
+authToken = "";
 theContent = {
     "key1": "hello",
     "key2": "world",
