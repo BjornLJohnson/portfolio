@@ -14,16 +14,7 @@ $(document).ready(function () {
         $.ajax({
             type: 'GET',
             url: 'https://7silg83b94.execute-api.us-west-2.amazonaws.com/prod/',
-            data: 'test',
             success: completeRequest
-//             method: 'GET',
-//             url: 'https://8x6sxe620f.execute-api.us-west-2.amazonaws.com',
-// //             headers: {
-// //                 Authorization: authToken
-// //             },
-// //             data: JSON.stringify(theContent),
-// //             contentType: 'application/json',
-//             success: completeRequest,
 //             error: function ajaxError(jqXHR, textStatus, errorThrown) {
 //                 console.error('Error executing lambda function: ', textStatus, ', Details: ', errorThrown);
 //                 console.error('Response: ', jqXHR.responseText);
@@ -34,6 +25,7 @@ $(document).ready(function () {
     
     function completeRequest(result) {
         console.log('Response received from API: ', result);
+        $(serverResponse).text("I heard: " + result);
     }
 }); 
 
