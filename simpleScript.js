@@ -28,7 +28,7 @@ $(document).ready(function () {
 //                 console.error('Error executing lambda function: ', textStatus, ', Details: ', errorThrown);
 //                 console.error('Response: ', jqXHR.responseText);
 //                 alert('An error occured when processing your request :\n' + jqXHR.responseText);
-            }
+//             }
         });
     };
     
