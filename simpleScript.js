@@ -12,13 +12,13 @@ $(document).ready(function () {
 
     function sendRequest(){
         $.ajax({
-            method: 'POST',
+            method: 'GET',
             url: 'https://8x6sxe620f.execute-api.us-west-2.amazonaws.com',
-            headers: {
-                Authorization: authToken
-            },
-            data: JSON.stringify(theContent),
-            contentType: 'application/json',
+//             headers: {
+//                 Authorization: authToken
+//             },
+//             data: JSON.stringify(theContent),
+//             contentType: 'application/json',
             success: completeRequest,
             error: function ajaxError(jqXHR, textStatus, errorThrown) {
                 console.error('Error executing lambda function: ', textStatus, ', Details: ', errorThrown);
