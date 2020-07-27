@@ -1,0 +1,115 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo-img {
+    height: 30px;
+    width: 30px;
+}
+
+#header {
+    background: #b3b3b3;
+    border-radius: 0;
+    /* border: 0; */
+}
+
+.navbar-brand {
+    color: ivory;
+    margin-left: 5px;
+    font-size: 2em;
+}
+
+#navbar-nav, a {
+    color: ivory;
+}
+
+.nav, .dropdown {
+    color: ivory;
+}
+
+#title {
+   color:#b3b3b3;
+   text-align: center;
+   font-size: 3em;
+   margin: 30px 0px 0px 30px;
+}
+
+.jumbotron {
+    /* margin-top: -30px; */
+    height: 500px;
+    background-image: url("../data/tahoe.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.experienceHeading {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.exprienceTitle {
+    text-align: center;
+    font-size: 2em;
+}
+
+.addButton {
+    border-radius: 10px;
+}
+
+.experienceColumn {
+    font-size: 1.2em;
+}
+
+.experience {
+    list-style-type: none;
+    margin: 15px 10px 15px;
+    padding: 10px;
+    background-color: #b3b3b3;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.defaultModal {
+    /* modals are hidden by default */
+    display: none;
+
+    /* modal container fixed across whole screen */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    /* z-index must be higher than .modal-background */
+    z-index: 999;
+    
+    /* enables scrolling for tall modals */
+    overflow: auto;
+
+}
+
+.modal-body {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 20px;
+    background: #fff;
+    box-shadow: 5px 5px 5px gray;
+
+    z-index: 1000;
+
+    border-radius: 10px;
+}
+
+body.modal-open {
+    /* body overflow is hidden to hide main scrollbar when modal window is open */
+    overflow: hidden;
+}

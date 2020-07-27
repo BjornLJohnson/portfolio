@@ -1,0 +1,18 @@
+{
+    "1": {
+        "id": 1,
+        "name": "The Grabberator-inator",
+        "date": "August 2017",
+        "coverPhoto": "data/images/grabberatorCover.jpg",
+        "skills": "Solidworks",
+        "description": "Along with another member of my group at the summer program COSMOS, I created a hand that responds to the motions of a glove in a lifelike manner. We used flex sensors on a gardening glove to read values of how far each individual finger bent using a flex sensor. We used a map function to convert these values into a range from 0 to 180 to send to servos, controlling each finger of a 3D printed hand which I designed on my own. To bend the hollow fingers, we ran fishing line down the length of the inside and tied it off at the tip. On the back of the hand, we ran rubbers bands which tightened upon bending, meant to snap the fingers back into place when the user straightened their hand."
+    },
+    "2": {
+        "id": 2,
+        "name": "Quadrotor Design",
+        "date": "January 2019",
+        "coverPhoto": "data/images/quadCover.png",
+        "skills": "CAD",
+        "description": "I created a fully detailed 3D model of the drone we plan on building. In the process I found and resolved issues with interference between components and tolerances. I used this model to get accurate estimates for the center of mass and rotational inertia of the drone about each axis, statistics which are incredibly useful for control algorithms. I also collaborated with the prototyping lab on campus to design a power distribution board which could be integrated with the frame of the drone. My segment of that project included designing the base of the board such that all necessary structural components could mount to it easily. I was also responsible for planning the layout of electrical components on the board such that weight distribution was symmetric and connections between components were efficient."
+    }
+}
