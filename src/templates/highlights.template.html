@@ -1,31 +1,31 @@
-<div class="container-fluid">
-    <div class="row experiencRow">
-        <div class="experienceHeading col-lg-12">
-            <h2 class="experienceTitle">Highlights</h2>
-            <button ng-click="$ctrl.openModal('custom-modal-1')" class="addButton btn btn-primary">Add
-                Experience</button>
-        </div>
-
-        <div class="experienceColumn col-lg-6" ng-repeat="experience in $ctrl.experiences">
-            <div class="experiencePreview" 
-            ng-click="$ctrl.openModal('spotlight-modal', experience.id)">
-                <div>{{experience.name}}</div>
-                <image src="{{experience.coverPhoto}}" class="img-fluid">
-                </image>
-            </div>
+<div class="row highlightContainer">
+    <div class="experienceHeading col-lg-12">
+        <h2 class="experienceTitle">Highlights</h2>
+    </div>
+    
+    <div class="experienceColumn col-lg-4" ng-repeat="experience in $ctrl.experiences">
+        <div class="experiencePreview" 
+        ng-click="$ctrl.openModal('spotlight-modal', experience)">
+            <div class="previewTitle">{{experience.name}}</div>
+            <image src="{{experience.coverPhoto}}" class="img-fluid previewImage">
+            </image>
         </div>
     </div>
 </div>
 
 <modal id="spotlight-modal" class="defaultModal">
-    <div class="modal-body">
-        <div class="experienceSpotlight">
+    <div class="modal-body row">
+        <div class="experienceSpotlight col-lg-9">
             <div>{{$ctrl.spotlight.name}}</div>
             <div>{{$ctrl.spotlight.date}}</div>
             <image src="{{$ctrl.spotlight.coverPhoto}}" class="img-fluid">
             </image>
             <div>Description: {{$ctrl.spotlight.description}}</div>
-            <div>Skills: {{$ctrl.spotlight.skills}}</div>
+        </div>
+        <div class="experience-details col-lg-3">
+            <div class="experience-type">{{$ctrl.spotlight.type}}</div>
+            <div class="skill-label">Skills:</div>
+            <div class="skills">{{$ctrl.spotlight.skills}}</div>
         </div>
     </div>
 </modal>

@@ -1,11 +1,23 @@
-
-<div class="jumbotron">
-    <h1 id="title">Welcome to My Portfolio</h1>
-    <button ui-sref="default.projects">Projects</button>
-    <button ui-sref="default.work">Work Experience</button>
-    <button ui-sref="default.publications">Publications</button>
+<div id="introduction">
+    <div class="jumbotron">
+        <h1 id="title">Welcome to My Portfolio</h1>
+    </div>
+    <div id="intro-nav">
+        <button ui-sref="default.projects">Projects</button>
+        <button ui-sref="default.work">Work Experience</button>
+        <button ui-sref="default.publications">Publications</button>  
+    </div>
 </div>
 
-<highlights></highlights>
+<div id="main-content" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+            Summary
+        </div>
+        <div class="col-lg-10">
+            <highlights></highlights>
+        </div>
+    </div>
+</div>
 
 <div ui-view></div>

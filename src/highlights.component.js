@@ -7,19 +7,20 @@ angular.module('portfolio')
     controller: HighlightsController
 });
 
-HighlightsController.$inject = ['ExperienceService', '$rootScope']
-function HighlightsController(ExperienceService, $rootScope) {
+HighlightsController.$inject = ['ExperienceService', '$rootScope', '$http']
+function HighlightsController(ExperienceService, $rootScope, $http) {
     var $ctrl = this;
 
     $ctrl.$onInit = function(){
-        ExperienceService.readExperiences('../data/listings.json')
+        // ExperienceService.readExperiences('../data/listings.json')
+        ExperienceService.readExperiencesDB()
         .then(function(response) {
             $ctrl.experiences = ExperienceService.getExperiences();
         })
     }
 
-    $ctrl.openModal = function(modalID, experienceID) {
-        $ctrl.spotlight = $ctrl.experiences[experienceID];
+    $ctrl.openModal = function(modalID, experience) {
+        $ctrl.spotlight = experience;
         $rootScope.$broadcast('modal:open', {id:modalID});
     }
 

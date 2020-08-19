@@ -1,0 +1,58 @@
+#logo-img {
+    height: 30px;
+    width: 30px;
+}
+
+#header {
+    background: #384a56;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    color: ivory;
+    margin-left: 5px;
+    font-size: 2em;
+}
+
+#navbar-nav, a {
+    color: ivory;
+}
+
+.nav, .dropdown {
+    color: ivory;
+}
+
+#page {
+    width: 80%;
+    margin: auto;
+}
+
+#introduction {
+    width: 100%;
+    background-color:#eeeeee;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 0 rgba(50,55,70,.3);
+}
+
+#intro-nav {
+    margin: 0px auto 0px;
+    text-align: center;
+}
+
+#title {
+   color:#b3b3b3;
+   font-size: 3em;
+   text-align: center;
+   margin: 30px auto 0px;
+}
+
+.jumbotron {
+    height: 400px;
+    margin: 0px;
+    border-radius: 0;
+    background-image: url("../data/tahoe.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

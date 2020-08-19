@@ -26,6 +26,10 @@
             url: '/publications',
             template: '<h1>These are my publications</h1>'
         })
+        .state('default.admin', {
+            url: '/admin',
+            template: '<admin></admin>'
+        })
         
         // .state(aboutState = {
         //     name: 'about',

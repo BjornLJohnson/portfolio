@@ -1,0 +1,47 @@
+<button ng-click="$ctrl.openModal('new-experience')" class="addButton btn btn-primary">Add Experience</button>
+<button ng-click="$ctrl.getExperiencesFromDatabase()" class="addButton btn btn-primary">Get from Database</button>
+
+<modal id="new-experience" class="defaultModal">
+    <div class="modal-body">
+        <div>
+            <form method="post" action="src/createExperience.php" enctype="multipart/form-data">
+                <div>
+                    Name: <br>
+                    <input class="inputbox" name="experience[name]"/>
+                </div>
+
+                <div>
+                    Highlight: <br>
+                    <input type="checkbox" name="experience[highlight]" value="1">
+                </div>
+
+                <div>
+                    Type: <br>
+                    <input class="inputbox" name="experience[type]"/>
+                </div>
+
+                <div>
+                    Description: <br>
+                    <textarea class="inputbox" FormElement input-field" name="experience[description]"></textarea>
+                </div>
+
+                <div>
+                    Date: <br>
+                    <input class="inputbox" name="experience[date]"/>
+                </div>
+
+                <div>
+                    Cover Photo: <br>
+                    <input class="inputbox" name="experience[coverPhoto]"/>
+                </div>
+
+                <div>
+                    Skills: <br>
+                    <input class="inputbox" name="experience[skills]"/>
+                </div>
+
+                <input id="submit" type="submit">
+            </form>
+        </div>
+    </div>
+</modal>
