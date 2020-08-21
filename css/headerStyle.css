@@ -40,19 +40,23 @@
 }
 
 #title {
-   color:#b3b3b3;
+   color:#384a56;
+   background-color: rgba(50,55,70,.2);
    font-size: 3em;
    text-align: center;
-   margin: 30px auto 0px;
+   height: 100%;
+   width: 100%;
+   padding-top: 100px;
 }
 
 .jumbotron {
     height: 400px;
     margin: 0px;
+    padding: 0px;
     border-radius: 0;
-    background-image: url("../data/tahoe.jpg");
+    background-image: url("../images/cover.jpg");
     background-attachment: scroll;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
