@@ -1,6 +1,6 @@
 body {
     /* box-sizing: border-box; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     background-color: #dddddd;
 }
 
@@ -22,22 +22,42 @@ body {
     width: 100%;
 }
 
+.sidebar {
+    height: 100%;
+    margin: 15px 0px 15px;
+    padding: 10px 10px 20px;
+    background-color: #cccccc;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #bbbbbb;
+    border-radius: 3px;
+
+    box-shadow: 1px 2px 5px 0 rgba(50,55,70,.3);
+}
+
 .highlightContainer {
     margin: 15px 0px 15px;
     padding: 10px 10px 20px;
     background-color: #cccccc;
-    border-color: #999999;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #bbbbbb;
     border-radius: 3px;
+
+    box-shadow: 1px 2px 5px 0 rgba(50,55,70,.3);
+}
+
+.subheading {
+    font-size: 1.4em;
+    font-weight: 30;
+    /* text-decoration: underline; */
 }
 
 .experienceHeading {
     font-size: 1.75em;
     text-align: center;
-}
-
-.exprienceTitle {
-    text-align: center;
-    font-size: 2em;
 }
 
 .addButton {

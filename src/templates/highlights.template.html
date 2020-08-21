@@ -1,11 +1,9 @@
 <div class="row highlightContainer">
-    <div class="experienceHeading col-lg-12">
-        <h2 class="experienceTitle">Highlights</h2>
-    </div>
-    
+
+    <div class="subheading col-lg-12">Highlights</div>
+
     <div class="experienceColumn col-lg-4" ng-repeat="experience in $ctrl.experiences">
-        <div class="experiencePreview" 
-        ng-click="$ctrl.openModal('spotlight-modal', experience)">
+        <div class="experiencePreview" ng-click="$ctrl.openModal('spotlight-modal', experience)">
             <div class="previewTitle">{{experience.name}}</div>
             <image src="{{experience.coverPhoto}}" class="img-fluid previewImage">
             </image>
