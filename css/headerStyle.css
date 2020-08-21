@@ -10,8 +10,17 @@
 
 .navbar-brand {
     color: ivory;
-    margin-left: 5px;
+    margin-left: 9%;
     font-size: 2em;
+}
+
+.navbar-nav {
+    margin-right: 12%;
+    font-size: 1.2em;
+}
+
+.navbar-nav a {
+    margin-right: 15px;
 }
 
 #navbar-nav, a {
@@ -36,7 +45,18 @@
 
 #intro-nav {
     margin: 0px auto 0px;
+    /* padding: 0 0 0 15%; */
     text-align: center;
+    height: 50px;
+}
+
+#intro-nav button {
+    height: 100%;
+    width: 120px;
+    margin: 0 30px 0 30px;
+    border-width: 0 0 5px 0;
+    font-size: 1.2em;
+    color: #5555ee; 
 }
 
 #title {

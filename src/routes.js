@@ -22,9 +22,9 @@
             url: '/work',
             template: '<h1>These are my work experiences</h1>'
         })
-        .state('default.publications', {
-            url: '/publications',
-            template: '<h1>These are my publications</h1>'
+        .state('default.resume', {
+            url: '/resume',
+            template: '<img id="resume" src="images/resume.png">'
         })
         .state('default.admin', {
             url: '/admin',

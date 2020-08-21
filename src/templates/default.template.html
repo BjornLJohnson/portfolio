@@ -1,27 +1,30 @@
 <div id="header" class="container-fluid">
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand pull-left" ui-sref="default.home">
+        <a class="navbar-brand" ui-sref="default.home">
             <img id="logo-img" src="images/logo.png">
             <span id="brandName">Bjorn Johnson</span>
         </a>
 
-        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" ui-sref="default.work">Employment</a>
                 <a class="nav-item nav-link" ui-sref="default.projects">Projects</a>
-                <a class="nav-item nav-link" ui-sref="default.work">Work</a>
-                <a class="nav-item nav-link" ui-sref="default.publications">Publications</a>
-                <div class="nav-item dropdown"> 
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-item nav-link" ui-sref="default.resume">Resume</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Contact
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Email</a>
-                        <a class="dropdown-item" href="#">Phone</a>
-                        <a class="dropdown-item" href="#">Linkedin</a>
+                        <a class="dropdown-item" href="#">bjorn@lundjohnson.com</a>
+                        <a class="dropdown-item" href="#">(408) 688-1394</a>
+                        <a class="dropdown-item" target="_blank"
+                            href="https://linkedin.com/in/bjorn-l-johnson">LinkedIn</a>
                     </div>
                 </div>
             </div>

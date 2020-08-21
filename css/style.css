@@ -8,6 +8,12 @@ body {
     padding: 0px;
 }
 
+#resume {
+    width: 70%;
+    display: block;
+    margin: 40px auto;
+}
+
 #new-experience .modal-body {
     width: 50%;
 }
