@@ -26,11 +26,16 @@ $sql = "INSERT INTO experiences " .
 
 $result = $conn->query($sql);
 
-$outp = "{ \"Success\": \"True\",
-           \"SQL\": " . $sql . 
-          "\"DEBUG\": " . implode("|", $experience) . "}";
+if(!$result){
+  $success = "False";
+}
+else {
+  $success = "True";
+}
 
-// $outp = "[" . $outp . "]";
+$outp = "{ \"Success\":" . $success . ",
+           \"SQL\": " . $sql . 
+        "}";
 
 $conn->close();
 

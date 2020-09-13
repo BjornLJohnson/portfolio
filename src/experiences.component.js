@@ -22,7 +22,12 @@ function ExperienceController(ExperienceService, $rootScope, $http) {
             ExperienceService.getExperiences().forEach(add);
             
             function add(experience, index) {
-                if(experience.type == $ctrl.type){
+                if($ctrl.type == "Highlights") {
+                    if(experience.highlight == "1"){
+                        $ctrl.experiences.push(experience); 
+                    }
+                }
+                else if(experience.type == $ctrl.type){
                     $ctrl.experiences.push(experience);
                 }
             }

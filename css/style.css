@@ -8,6 +8,12 @@ body {
     padding: 0px;
 }
 
+.adminIntro {
+    text-align: center;
+    padding: 5%;
+    margin: auto;
+}
+
 #introduction {
     width: 75%;
     margin: auto;
@@ -39,7 +45,7 @@ body {
 }
 
 .subheading {
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 30;
     padding-left: 15px;
 }
@@ -109,6 +115,8 @@ body {
 }
 
 .subheading2 {
+    color: #405360;
     font-weight: bold;
-    margin: 10px;
+    font-size: 0.9em;
+    margin: 20px 0px 10px 10px;
 }

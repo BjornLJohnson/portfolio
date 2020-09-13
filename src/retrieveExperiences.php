@@ -10,7 +10,7 @@ if ($conn->connect_error) {
           . $conn->connect_error);
 }
 
-$result = $conn->query("SELECT * FROM experiences");
+$result = $conn->query("SELECT * FROM experiences ORDER BY date DESC");
 
 $outp = "";
 
