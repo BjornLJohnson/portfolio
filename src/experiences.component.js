@@ -4,21 +4,27 @@
 angular.module('portfolio')
 .component('experiences', {
     templateUrl: 'src/templates/experiences.template.html',
-    controller: HighlightsController,
+    controller: ExperienceController,
     bindings: {
         type: '@'
     }
 });
 
-HighlightsController.$inject = ['ExperienceService', '$rootScope', '$http']
-function HighlightsController(ExperienceService, $rootScope, $http) {
+ExperienceController.$inject = ['ExperienceService', '$rootScope', '$http']
+function ExperienceController(ExperienceService, $rootScope, $http) {
     var $ctrl = this;
 
     $ctrl.$onInit = function(){
-        // ExperienceService.readExperiences('../data/listings.json')
         ExperienceService.readExperiencesDB()
         .then(function(response) {
-            $ctrl.experiences = ExperienceService.getExperiences();
+            $ctrl.experiences = [];
+            ExperienceService.getExperiences().forEach(add);
+            
+            function add(experience, index) {
+                if(experience.type == $ctrl.type){
+                    $ctrl.experiences.push(experience);
+                }
+            }
         })
     }
 
