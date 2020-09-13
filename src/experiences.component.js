@@ -6,7 +6,8 @@ angular.module('portfolio')
     templateUrl: 'src/templates/experiences.template.html',
     controller: ExperienceController,
     bindings: {
-        type: '@'
+        type: '@',
+        size: '@'
     }
 });
 

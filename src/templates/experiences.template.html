@@ -1,8 +1,8 @@
 <div class="row highlightContainer section">
     <div class="subheading col-lg-12">{{$ctrl.type}}</div>
     <hr>
-    <div class="experienceColumn col-lg-4"
-         ng-repeat="experience in $ctrl.experiences">
+    <div class="experienceColumn {{$ctrl.size}}"
+        ng-repeat="experience in $ctrl.experiences">
         <div class="experiencePreview" ng-click="$ctrl.openModal('spotlight-modal', experience)">
             <div class="previewTitle">{{experience.name}}</div>
             <image src="{{experience.coverPhoto}}" class="img-fluid previewImage">
