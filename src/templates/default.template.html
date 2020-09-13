@@ -39,5 +39,18 @@
 
 <!-- Main Content -->
 <div id="page">
-    <div ui-view></div>
+    <div id="cover">
+        <div class="jumbotron">
+            <h1 id="title">Bjorn Johnson</h1>
+        </div>
+        <div id="cover-nav">
+            <button ui-sref="default.home">Home</button>
+            <button ui-sref="default.work">Employment</button>
+            <button ui-sref="default.projects">Projects</button>
+            <button ui-sref="default.resume">Resume</button>
+        </div>
+    </div>
+    <div id="main-content" class="container-fluid">
+        <div ui-view></div>
+    </div>
 </div>

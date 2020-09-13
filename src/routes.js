@@ -16,11 +16,11 @@
         })
         .state('default.projects', {
             url: '/projects',
-            template: '<h1>These are my projects</h1>'
+            templateUrl: 'src/templates/projects.html'
         })
         .state('default.work', {
             url: '/work',
-            template: '<h1>These are my work experiences</h1>'
+            templateUrl: 'src/templates/work.html'
         })
         .state('default.resume', {
             url: '/resume',

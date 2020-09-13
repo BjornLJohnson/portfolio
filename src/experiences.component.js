@@ -2,9 +2,12 @@
     'use strict';
     
 angular.module('portfolio')
-.component('highlights', {
-    templateUrl: 'src/templates/highlights.template.html',
-    controller: HighlightsController
+.component('experiences', {
+    templateUrl: 'src/templates/experiences.template.html',
+    controller: HighlightsController,
+    bindings: {
+        type: '@'
+    }
 });
 
 HighlightsController.$inject = ['ExperienceService', '$rootScope', '$http']
