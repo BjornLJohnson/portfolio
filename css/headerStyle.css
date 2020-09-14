@@ -6,7 +6,9 @@
 #header {
     background: #384a56;
     border-radius: 0;
-    /* height: 50px; */
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .navbar-brand {
@@ -38,7 +40,8 @@
 
 #page {
     width: 85%;
-    margin: auto;
+    margin: 70px auto;
+    position: relative;
 }
 
 #cover {
