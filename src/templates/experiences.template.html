@@ -5,7 +5,7 @@
         ng-repeat="experience in $ctrl.experiences">
         <div class="experiencePreview" ng-click="$ctrl.openModal('spotlight-modal', experience)">
             <div class="previewTitle">{{experience.name}}</div>
-            <image src="{{experience.coverPhoto}}" class="img-fluid previewImage">
+            <image src="images/{{experience.coverPhoto}}" class="img-fluid previewImage">
             </image>
         </div>
     </div>
@@ -16,8 +16,17 @@
         <div class="experienceSpotlight col-lg-9">
             <div class="subheading">{{$ctrl.spotlight.name}}</div>
             <div class="subheading3">{{$ctrl.spotlight.date}}</div>
-            <image src="{{$ctrl.spotlight.coverPhoto}}" class="img-fluid">
-            </image>
+            <div class="slides">
+                <image src="images/{{$ctrl.spotlight.currImg}}" class="img-fluid">
+                </image>
+                <div class="prev" ng-click="$ctrl.prevImg()">
+                    &#10094;
+                </div>
+                <div class="next" ng-click="$ctrl.nextImg()">
+                    &#10095;
+                </div>
+            </div>
+            <div class="slideStatus">{{$ctrl.spotlight.i+1}} / {{$ctrl.spotlight.images.length}}</div>
             <div class="description">{{$ctrl.spotlight.description}}</div>
         </div>
         <div class="experience-details col-lg-3">

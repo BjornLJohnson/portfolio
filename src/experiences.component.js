@@ -44,6 +44,12 @@ function ExperienceController(ExperienceService, $rootScope, $http) {
                 experience.date = month.concat(", ", date[0]);
 
                 experience.skills = experience.skills.split(", ");
+
+                // Set up slideshow/images
+                experience.images = experience.images.split(", ");
+                experience.currImg = experience.images[0];
+                experience.coverPhoto = experience.images[0];
+                experience.i = 0;
             }
         })
     }
@@ -55,6 +61,26 @@ function ExperienceController(ExperienceService, $rootScope, $http) {
 
     $ctrl.closeModal = function(modalID) {
         $rootScope.$broadcast('modal:close', {id:modalID});
+    }
+
+    $ctrl.nextImg = function() {
+        let i = $ctrl.spotlight.i;
+        $ctrl.setImg(i+1)
+    }
+
+    $ctrl.prevImg = function() {
+        let i = $ctrl.spotlight.i;
+        $ctrl.setImg(i-1)
+    }
+
+    $ctrl.setImg = function (i) {
+        let num = $ctrl.spotlight.images.length;
+        $ctrl.spotlight.currImg = $ctrl.spotlight.images[$ctrl.mod(i,num)];
+        $ctrl.spotlight.i = $ctrl.mod(i,num);
+    }
+
+    $ctrl.mod = function(n, m) {
+        return ((n%m)+m)%m;
     }
 }
 
