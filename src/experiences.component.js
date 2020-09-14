@@ -1,3 +1,6 @@
+var months = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"];
+
 (function () {
     'use strict';
     
@@ -30,6 +33,17 @@ function ExperienceController(ExperienceService, $rootScope, $http) {
                 else if(experience.type == $ctrl.type){
                     $ctrl.experiences.push(experience);
                 }
+            }
+
+            $ctrl.experiences.forEach(adjustEntries);
+
+            function adjustEntries(experience, index) {
+                var date = experience.date.split("-");
+                var month = months[parseInt(date[1])-1];
+
+                experience.date = month.concat(", ", date[0]);
+
+                experience.skills = experience.skills.split(", ");
             }
         })
     }

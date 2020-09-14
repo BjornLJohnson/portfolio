@@ -14,16 +14,20 @@
 <modal id="spotlight-modal" class="defaultModal">
     <div class="modal-body row">
         <div class="experienceSpotlight col-lg-9">
-            <div>{{$ctrl.spotlight.name}}</div>
-            <div>{{$ctrl.spotlight.date}}</div>
+            <div class="subheading">{{$ctrl.spotlight.name}}</div>
+            <div class="subheading3">{{$ctrl.spotlight.date}}</div>
             <image src="{{$ctrl.spotlight.coverPhoto}}" class="img-fluid">
             </image>
-            <div>Description: {{$ctrl.spotlight.description}}</div>
+            <div class="description">{{$ctrl.spotlight.description}}</div>
         </div>
         <div class="experience-details col-lg-3">
-            <div class="experience-type">{{$ctrl.spotlight.type}}</div>
-            <div class="skill-label">Skills:</div>
-            <div class="skills">{{$ctrl.spotlight.skills}}</div>
+            <div class="subheading3">{{$ctrl.spotlight.type}}</div>
+            <hr>
+            <div class="subheading3">Skills</div>
+            <div class="skills" ng-repeat="skill in $ctrl.spotlight.skills">
+                {{skill}}
+            </div>
+            <hr>
         </div>
     </div>
 </modal>

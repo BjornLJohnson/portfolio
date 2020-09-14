@@ -36,7 +36,7 @@ body {
 
 .section{
     margin: 15px 0px 5px;
-    padding: 10px 10px 20px;
+    padding: 10px;
     background-color: #dddddd;
     border-radius: 3px;
     box-shadow: 1px 2px 5px 0 rgba(50,55,70,.3);
@@ -47,7 +47,7 @@ body {
 .subheading {
     font-size: 1.5em;
     font-weight: 30;
-    padding-left: 15px;
+    /* padding-left: 15px; */
 }
 
 .experienceHeading {
@@ -68,7 +68,10 @@ body {
     border-radius: 5px;
     overflow: hidden;
     margin-top: 10px;
+    margin-bottom: 10px;
     height: 300px;
+
+    box-shadow: 1px 2px 5px 0 rgba(50,55,70,.3);
 }
 
 .previewImage {
@@ -90,24 +93,8 @@ body {
     padding-top: 10px;
 }
 
-#spotlight-modal .modal-body {
-    padding: 0 0 0 20px;
-}
-
-.experienceSpotlight {
-    padding: 20px 20px 20px;
-}
-
-.experienceSpotlight img {
-    height: 450px;
-    width: 750px;
-    object-fit: contain;
-}
-
-.experience-details {
-    background-color: #b3b3b3;
-    padding-right: 30px;
-    margin-right: 0;
+.sidebar {
+    padding: 15px;
 }
 
 .sidebar div {
