@@ -107,3 +107,13 @@ body.modal-open {
     text-align: center;
     margin: 10px auto;
   }
+
+  .skill {
+      border-radius: 5px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: black;
+      padding: 4px;
+      margin: 3px;
+      display: inline-block;
+  }
