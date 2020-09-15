@@ -17,6 +17,7 @@ angular.module('portfolio')
 ExperienceController.$inject = ['ExperienceService', '$rootScope', '$http']
 function ExperienceController(ExperienceService, $rootScope, $http) {
     var $ctrl = this;
+    $ctrl.loaded = false;
 
     $ctrl.$onInit = function(){
         ExperienceService.readExperiencesDB()
@@ -24,6 +25,7 @@ function ExperienceController(ExperienceService, $rootScope, $http) {
             $ctrl.experiences = [];
             ExperienceService.getExperiences().forEach(add);
             
+            // Only add the experience to this controller if it is of the right type
             function add(experience, index) {
                 if($ctrl.type == "Highlights") {
                     if(experience.highlight == "1"){
@@ -35,9 +37,16 @@ function ExperienceController(ExperienceService, $rootScope, $http) {
                 }
             }
 
-            $ctrl.experiences.forEach(adjustEntries);
+            // Format the experiences to display nicely
+            $ctrl.experiences.forEach(formatEntries);
+            function formatEntries(experience, index) {
+                console.log(experience);
 
-            function adjustEntries(experience, index) {
+                if(experience.formatted)
+                    return;
+                
+                console.log(experience);
+
                 var date = experience.date.split("-");
                 var month = months[parseInt(date[1])-1];
 
@@ -50,7 +59,12 @@ function ExperienceController(ExperienceService, $rootScope, $http) {
                 experience.currImg = experience.images[0];
                 experience.coverPhoto = experience.images[0];
                 experience.i = 0;
+
+                console.log(experience.images);
+                experience.formatted = true;
             }
+
+            $ctrl.loaded = true;
         })
     }
 

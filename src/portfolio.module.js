@@ -23,6 +23,10 @@ function ExperienceService($q, $http) {
               })
               .then(function (response) {
                   service.experiences = response.data;
+                  // Let controller know these experiences have not been reformatted yet
+                  service.experiences.forEach(function(item) {
+                    item.formatted = false;
+                  });
                   deferred.resolve(result);
                   retrieved = true;
               });

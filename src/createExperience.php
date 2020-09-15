@@ -19,7 +19,7 @@ else :
 endif;
 
 $sql = "INSERT INTO experiences " . 
-        "(name, highlight, type, description, date, coverPhoto, skills) " . 
+        "(name, highlight, type, description, date, images, skills) " . 
         "VALUES ('" . $experience['name'] ."','". $highlight ."','". $experience['type'] ."','". $experience['description'] ."','".
           $experience['date'] ."','". $experience['coverPhoto'] ."','".
           $experience['skills'] . "');";
