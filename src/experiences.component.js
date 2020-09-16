@@ -40,12 +40,9 @@ function ExperienceController(ExperienceService, $rootScope, $http) {
             // Format the experiences to display nicely
             $ctrl.experiences.forEach(formatEntries);
             function formatEntries(experience, index) {
-                console.log(experience);
 
                 if(experience.formatted)
                     return;
-                
-                console.log(experience);
 
                 var date = experience.date.split("-");
                 var month = months[parseInt(date[1])-1];
@@ -60,7 +57,6 @@ function ExperienceController(ExperienceService, $rootScope, $http) {
                 experience.coverPhoto = experience.images[0];
                 experience.i = 0;
 
-                console.log(experience.images);
                 experience.formatted = true;
             }
 

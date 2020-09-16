@@ -42,4 +42,10 @@ function ExperienceService($q, $http) {
         return service.experiences;
     };
 }
-})()
+})();
+
+collapseNavBar = function() {
+    window.setTimeout(function(){
+        $('#navbarNav').removeClass("show");
+    }, 100);
+}
