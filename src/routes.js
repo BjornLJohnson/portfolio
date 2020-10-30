@@ -24,7 +24,7 @@
         })
         .state('default.resume', {
             url: '/resume',
-            template: '<img id="resume" src="images/resume.jpg">'
+            templateUrl: 'src/templates/resume.html'
         })
         .state('default.admin', {
             url: '/admin',

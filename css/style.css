@@ -14,10 +14,23 @@ body {
     margin: auto;
 }
 
-#introduction {
+.introduction {
     width: 75%;
     margin: auto;
     text-align: center;
+}
+
+.resume_blurb {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+.resume_blurb a {
+    background: #4287f5;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
 }
 
 #resume {
